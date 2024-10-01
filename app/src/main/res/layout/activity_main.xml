@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="viewEnd"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgMovieApp"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:contentDescription="@string/txtMovieDescription"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/movie" />
+
+    <!--    <androidx.cardview.widget.CardView-->
+    <!--        android:id="@+id/cardHeader"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="100dp"-->
+    <!--        android:layout_marginVertical="10dp"-->
+    <!--        android:gravity="center"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        app:cardCornerRadius="12dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent">-->
+
+    <!--        -->
+
+    <!--        <LinearLayout-->
+    <!--            android:id="@+id/LinearLayoutTitle"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:orientation="vertical"-->
+    <!--            android:padding="10dp">-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/txtAppTitle"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="@string/txtAppTitle"-->
+    <!--                android:textAlignment="textEnd"-->
+    <!--                android:textColor="@color/white"-->
+    <!--                android:textColorLink="@color/white"-->
+    <!--                android:textSize="24sp"-->
+    <!--                android:textStyle="bold" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/txtStudent"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="@string/txtStudent"-->
+    <!--                android:textAlignment="textEnd"-->
+    <!--                android:textStyle="italic" />-->
+    <!--        </LinearLayout>-->
+
+    <!--    </androidx.cardview.widget.CardView>-->
+
+    <!-- Updated RecyclerView to properly scroll -->
+
+    <TextView
+        android:id="@+id/lblAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/lblAppName"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/movieRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgMovieApp" />
+
+    <TextView
+        android:id="@+id/lblStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/lblStudent"
+        android:textAlignment="viewEnd"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblAppName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

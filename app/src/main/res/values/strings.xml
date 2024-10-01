@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MovieApp</string>
+    <string name="btnPrice">$ 0.00</string>
+    <string name="txtMovieTitle">Title</string>
+    <string name="txtMovieDescription">Description</string>
+    <string name="txtAppTitle">Movie App</string>
+    <string name="txtStudent">Elton Evangelista</string>
+    <string name="btnPriceDetail">$ 0.00</string>
+    <string name="lblRating">Rating:</string>
+    <string name="txtMovieDescriptionDetail">Description...</string>
+    <string name="txtMovieTitleDetail">Title...</string>
+    <string name="lblAppName">Movie App</string>
+    <string name="lblStudent">Elton Evangelista</string>
+    <string name="txtAverageRating">Average rating...</string>
+</resources>
